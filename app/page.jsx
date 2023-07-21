@@ -1,8 +1,22 @@
+import Feed from "@/components/Feed";
 
-function page() {
+function Home() {
   return (
-    <div className="bg-zinc-950 text-white text-4xl">Home page</div>
-  )
+    <section className="w-full flex-center flex-col">
+      <h1 className="head_text text-center">
+        Discover & Share
+        <br className="max-md:hidden" />
+        <span className="orange_gradient block text-center">AI Powered Prompts</span>
+      </h1>
+      <p className="desc text-center">
+        Prompt app is an open-source AI prompting tool for modern world to discover, create and share creative prompts
+      </p>
+
+      {/* feed  */}
+      <Feed />
+
+    </section>
+  );
 }
 
-export default page
+export default Home;

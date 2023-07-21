@@ -20,7 +20,6 @@ function ProfilePage({ userEmail }) {
 
   const handleDelete = async (post) => {
     const hasConfirmed = confirm('are you sure want to delete ths prompt?')
-    console.log(post)
     if(hasConfirmed){
         try {
             await fetch(`/api/prompt/${post._id.toString()}`,{

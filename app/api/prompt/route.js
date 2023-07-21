@@ -5,6 +5,7 @@ export async function GET(req){
 try {
     await connectDB();
     const prompts =  await Prompt.find({});
+    console.log('prompts =>>', prompts)
 
     return new Response(JSON.stringify(prompts), {status: 200})
 

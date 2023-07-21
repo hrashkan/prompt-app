@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 import PromptCardList from "./PromptCardList";
-
+export const revalidate = 0
 function Feed() {
   const [searchText, setSearchText] = useState("");
   const [posts, setPosts] = useState([]);
